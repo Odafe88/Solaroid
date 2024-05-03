@@ -56,6 +56,12 @@ export function ClusterChecker({ children }: { children: ReactNode }) {
         </button>
       </div>
     );
+  }else if (query.isSuccess) {
+    return (
+      <div>
+        <h1>Success</h1>
+      </div>
+    )
   }
   return children;
 }
@@ -64,7 +70,7 @@ export function ClusterUiSelect() {
   const { clusters, setCluster, cluster } = useCluster();
   return (
     <div className="dropdown dropdown-end">
-      <label tabIndex={0} className="btn btn-primary rounded-btn">
+      <label tabIndex={0} className="bg-yellow-200 border-none text-slate-700 font-bold text-lg btn btn-primary rounded-btn">
         {cluster.name}
       </label>
       <ul

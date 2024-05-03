@@ -1,5 +1,5 @@
-import SolaroidFeature from '@/components/solaroid/solaroid-feature';
+import {SolaroidPage} from '@/components/solaroid/solaroid-ui';
 
 export default function Page() {
-  return <SolaroidFeature />;
+  return <SolaroidPage />;
 }

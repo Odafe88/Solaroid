@@ -101,7 +101,7 @@ export function ClusterProvider({ children }: { children: ReactNode }) {
   return <Context.Provider value={value}>{children}</Context.Provider>;
 }
 
-export function useCluster() {
+export function   useCluster() {
   return useContext(Context);
 }
 
